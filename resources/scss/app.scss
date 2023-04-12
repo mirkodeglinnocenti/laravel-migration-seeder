@@ -1,1 +1,7 @@
 @import '~bootstrap/scss/bootstrap';
+
+.grid-box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
