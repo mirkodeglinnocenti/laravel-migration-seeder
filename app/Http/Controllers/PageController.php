@@ -10,7 +10,7 @@ class PageController extends Controller {
 
     public function homepage(){
 
-        $trains = Train::all();
+        $trains = Train::where('orario_di_partenza', '>=', now())->get();
 
         $data = [
             'trains' => $trains
